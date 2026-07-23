@@ -1,9 +1,10 @@
 import Reveal from "./Reveal";
 
 /**
- * Project overview — the narrative "what this is and why" (BUILD_SPEC §1).
- * Warm oat canvas so it reads as one family with the tool; the signature dependency-chain
- * thread appears as the pull-quote's left rail.
+ * RIPCHD.PED Project Overview — the narrative "what this is and why", carried verbatim from
+ * the RIPCHD.PED site copy (the study's own words). Warm oat canvas so it reads as one family
+ * with the tool. Left rail states the project + its expansion; the right column carries the
+ * body and the two volume references.
  */
 export default function ProjectOverview() {
   return (
@@ -11,36 +12,54 @@ export default function ProjectOverview() {
       <div className="mx-auto max-w-shell px-4 pb-20 pt-10 sm:px-6 lg:pb-28 lg:pt-16">
         <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <Reveal>
-            <p className="eyebrow text-orange-deep">The project</p>
+            <p className="eyebrow text-orange-deep">RIPCHD.PED Project Overview</p>
             <h2 className="mt-3 font-display text-display-md font-normal text-ink-soft">
-              From a spreadsheet into a tool teams can actually use together.
+              Realizing Improved Patient Care through Human-centered Design for Pediatric
+              Mental and Behavioral Health in the Emergency Department.
             </h2>
           </Reveal>
 
           <Reveal delay={80} className="max-w-xl">
             <p className="text-lg leading-relaxed text-ink">
-              The MBH-Friendly ED Design Toolkit helps hospital teams design pediatric
-              emergency departments that support patients experiencing mental and behavioral
-              health crises. It began as the RIPCHD.PED research workbook — dozens of linked
-              spreadsheet formulas — and is now a guided web assessment anyone on the team
-              can run.
+              Mental and behavioral health (MBH) conditions affected 1 in every 5 children in
+              the United States in 2023. With this rise in pediatric MBH concerns, an
+              increasing number of children in MBH crisis and their care partners are visiting
+              emergency departments (ED) for MBH care. Though EDs are well equipped to address
+              medical emergencies, they struggle to meet the care needs of pediatric MBH
+              patients and their care partners. The goal of the RIPCHD.PED patient safety
+              learning lab funded by the Agency for Healthcare Research and Quality (AHRQ) is
+              to improve the safety and experiences of children with MBH conditions in the ED
+              while also improving provider well-being.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              Clinicians, architects, and hospital leadership move through it together:
-              capture the project&apos;s context, prioritize what matters, then score how the
-              design measures up — guideline by guideline.
+              This 4-year research study is a collaboration between Prisma Health, the
+              University of South Carolina, and Clemson University. Twelve EDs (10 urban and 2
+              rural) within hospitals in medically underserved communities (5 EDs) and Mental
+              Health Healthcare Provider Shortage Areas (all EDs) in South Carolina are
+              participating in this study. The study resulted in the development of thirteen
+              MBH-friendly ED design guidelines. These guidelines provide the framework for
+              the MBH-Friendly ED Design Toolkit.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-muted">
+              More information about the study and its findings is available in the RIPCHD.PED
+              Books.
             </p>
 
-            {/* Pull-quote carrying the dependency-chain premise. */}
-            <blockquote className="mt-8 flex gap-4 rounded-card bg-[color:var(--regalia-veil)] p-6">
-              <span className="thread-line w-1 shrink-0 rounded-full" aria-hidden />
-              <p className="font-display text-xl italic leading-snug text-ink-soft">
-                Every early priority weights the decisions that follow — so the final
-                alignment score reflects{" "}
-                <span className="text-orange-deep not-italic">your</span> team&apos;s values,
-                not a generic checklist.
-              </p>
-            </blockquote>
+            {/* Volume references — links to be supplied (currently placeholders). */}
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="#"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-control border border-regalia/35 bg-[color:var(--regalia-veil)] px-5 text-sm font-semibold text-regalia transition-colors hover:bg-regalia-wash"
+              >
+                RIPCHD.PED Volume 1 <span aria-hidden>↗</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-control border border-regalia/35 bg-[color:var(--regalia-veil)] px-5 text-sm font-semibold text-regalia transition-colors hover:bg-regalia-wash"
+              >
+                RIPCHD.PED Volume 2 <span aria-hidden>↗</span>
+              </a>
+            </div>
           </Reveal>
         </div>
       </div>

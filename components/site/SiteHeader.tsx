@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "/design-guidelines", label: "Design Guidelines" },
+  { href: "/setup", label: "Design Toolkit" },
+  { href: "/team", label: "RIPCHD.PED Team" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 /**
@@ -74,7 +76,7 @@ export default function SiteHeader() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-1.5 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {NAV.map((item) => {
             const active = isActive(item.href);
             return (
@@ -82,7 +84,7 @@ export default function SiteHeader() {
                 key={item.href}
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`rounded-full px-4 py-2 text-[0.95rem] font-medium transition-colors ${
+                className={`whitespace-nowrap rounded-full px-3 py-2 text-[0.9rem] font-medium transition-colors ${
                   active
                     ? "border border-orange/45 bg-orange-wash text-orange-deep"
                     : "border border-transparent text-ink-soft hover:bg-ink/[0.07] hover:text-ink"
@@ -94,16 +96,16 @@ export default function SiteHeader() {
           })}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <Link
             href="/signin"
-            className="cta-secondary rounded-full px-4 py-2 text-[0.95rem] font-medium text-ink-soft hover:bg-ink/[0.07] hover:text-ink"
+            className="cta-secondary whitespace-nowrap rounded-full px-3 py-2 text-[0.9rem] font-medium text-ink-soft hover:bg-ink/[0.07] hover:text-ink"
           >
             Sign in
           </Link>
           <Link
             href="/signup"
-            className="cta-primary inline-flex min-h-[42px] items-center justify-center gap-2 rounded-full px-5 text-[0.95rem] font-semibold shadow-card"
+            className="cta-primary inline-flex min-h-[42px] items-center justify-center gap-2 whitespace-nowrap rounded-full px-4 text-[0.9rem] font-semibold shadow-card"
           >
             Get started <span aria-hidden>→</span>
           </Link>
@@ -116,7 +118,7 @@ export default function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-control text-ink md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-control text-ink lg:hidden"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
             {open ? (
@@ -142,7 +144,7 @@ export default function SiteHeader() {
       {open && (
         <div
           id="mobile-menu"
-          className="border-t border-sand bg-canvas/95 px-4 pb-6 pt-2 backdrop-blur-md md:hidden"
+          className="border-t border-sand bg-canvas/95 px-4 pb-6 pt-2 backdrop-blur-md lg:hidden"
         >
           <nav className="flex flex-col" aria-label="Primary">
             {NAV.map((item) => {
