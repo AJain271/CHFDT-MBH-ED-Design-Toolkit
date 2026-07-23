@@ -1,0 +1,93 @@
+/**
+ * Design tokens — generated from design.md (authoritative).
+ * Warm-minimalist, light oat/beige canvas, authentic Clemson identity.
+ * Do not introduce colors outside this palette.
+ */
+
+:root {
+  /* --- Core palette (design.md § Color palette) --- */
+  --canvas: #faf7f0; /* Oat — page background */
+  --panel: #f3ede1; /* Parchment — cards, sidebars, raised surfaces */
+  --sand: #e7decd; /* Hairline borders, dividers, input outlines */
+  --ink: #26303a; /* Blue Ridge deep — primary text */
+  --ink-soft: #3a4958; /* Blue Ridge — headings / secondary ink */
+  --muted: #6b6058; /* Howard's Rock — captions, helper text, placeholders */
+
+  --orange: #f66733; /* Clemson Orange — primary accent */
+  --orange-deep: #d9531c; /* Accent for text-bearing fills (AA contrast) */
+  --orange-wash: #fce9df; /* Selected/hover backgrounds, subtle fills */
+  --regalia: #522d80; /* Regalia — secondary accent, step markers (sparing) */
+  --regalia-wash: #ece6f2; /* Regalia-tinted panels/badges */
+
+  /* --- DAT answer + status colors --- */
+  --yes: #566127; /* Bowman — Yes / aligned */
+  --maybe: #c9922e; /* deep Anna's Lace — Maybe / partial */
+  --no: #9e3b2e; /* brick — No / gap */
+  --na: #86898c; /* Innovation — Not Applicable */
+
+  /* --- Type --- */
+  --font-display: var(--font-fraunces), ui-serif, Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* --- Radii, shadow, motion --- */
+  --radius-card: 16px;
+  --radius-control: 10px;
+  --shadow-card: 0 1px 2px rgba(38, 48, 58, 0.04);
+  --shadow-card-hover: 0 6px 18px rgba(38, 48, 58, 0.08);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 180ms;
+
+  /* --- Landing surface (marketing pages only — see design.md § Landing surface) ---
+     The public front door is allowed to be expressive: it leans on Clemson's own
+     Regalia purple, deepened for gradient atmosphere, with orange kept as the single
+     loudest action color. The wizard tool never uses these tokens. */
+  --regalia-deep: #33194f; /* Deepened Regalia — gradient floor, dark hero field */
+  --regalia-mid: #45236b; /* Mid Regalia — gradient middle */
+  --regalia-glow: #6c3fa0; /* Lifted Regalia — glints, focus rings on dark */
+
+  /* Hero field: a warm purple depth with an orange sunrise bleeding from one corner. */
+  --grad-hero: radial-gradient(
+      120% 120% at 88% 8%,
+      rgba(246, 103, 51, 0.32) 0%,
+      rgba(246, 103, 51, 0) 42%
+    ),
+    linear-gradient(150deg, #4a2775 0%, var(--regalia-mid) 46%, var(--regalia-deep) 100%);
+  /* Primary CTA on the marketing surface — warm and forward. */
+  --grad-cta: linear-gradient(135deg, var(--orange) 0%, var(--orange-deep) 100%);
+  /* Quiet purple→orange thread used for the dependency-chain motif. */
+  --grad-thread: linear-gradient(180deg, var(--regalia) 0%, var(--orange) 100%);
+
+  /* Frosted surfaces: light cards floating over the dark hero (design.md § Landing). */
+  --panel-frost: rgba(255, 255, 255, 0.9);
+  --panel-frost-line: rgba(255, 255, 255, 0.6);
+  /* Translucent purple for glass panels sitting on the oat canvas. */
+  --regalia-veil: rgba(82, 45, 128, 0.06);
+
+  --shadow-float: 0 18px 40px -18px rgba(38, 24, 58, 0.35);
+  --shadow-glow: 0 20px 55px -22px rgba(217, 83, 28, 0.55);
+
+  /* Page flow: one continuous top→bottom wash of the marketing surface —
+     warm beige, into light orange, into light purple, into deep Regalia at the
+     foot of the page. Built as per-section boundary colors so each section owns a
+     legible text/background pairing while the seams line up into one gradient. */
+  --beige: #f7f1e5; /* warm beige — page top */
+  --wash-orange: #fce6d3; /* light orange band */
+  --wash-lilac: #efe3ef; /* orange→purple blend */
+  --wash-purple: #e4d6f2; /* light purple band */
+
+  --sec-1: linear-gradient(180deg, var(--beige) 0%, var(--wash-orange) 100%);
+  --sec-2: linear-gradient(180deg, var(--wash-orange) 0%, var(--wash-lilac) 100%);
+  --sec-3: linear-gradient(180deg, var(--wash-lilac) 0%, var(--wash-purple) 100%);
+  /* The scroll demo now carries the light→dark transition, so the CTA band is a calm,
+     near-flat deep purple that continues straight out of the demo (no harsh seam). */
+  --sec-4: linear-gradient(180deg, var(--regalia-deep) 0%, #2c1544 100%);
+
+  /* Subtle card sheen — a soft top-light gradient so widgets lift off the surface. */
+  --grad-card: linear-gradient(158deg, #ffffff 0%, var(--panel) 100%);
+
+  /* Subtle grid tile — a faint architectural grid under the whole surface. */
+  --grid-line: rgba(82, 45, 128, 0.05);
+  --grid-img: linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  --grid-size: 46px;
+}

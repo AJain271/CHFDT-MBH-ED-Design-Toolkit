@@ -1,0 +1,334 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    color: var(--ink-soft);
+    line-height: 1.15;
+    font-weight: 400;
+  }
+
+  /* Numeric alignment for report figures (design.md § Typography). */
+  .tnum {
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* Visible keyboard focus on every interactive element (quality floor). */
+  :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+    outline: 2px solid var(--orange);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .card {
+    background-color: var(--panel);
+    border: 1px solid var(--sand);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Native form controls styled to design.md § Components. */
+  .field {
+    background-color: var(--panel);
+    border: 1px solid var(--sand);
+    border-radius: var(--radius-control);
+    color: var(--ink);
+    min-height: 44px;
+    padding: 0.55rem 0.75rem;
+    width: 100%;
+    transition: border-color var(--dur) var(--ease-out),
+      box-shadow var(--dur) var(--ease-out);
+  }
+  .field::placeholder {
+    color: var(--muted);
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px var(--orange-wash);
+  }
+
+  /* Step enter animation (design.md § Motion: fade + 8px slide). */
+  .step-enter {
+    animation: step-in var(--dur) var(--ease-out);
+  }
+  @keyframes step-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Scroll-reveal for the marketing surface (design.md § Landing surface).
+     Elements rise + fade in once when they enter the viewport; the visible
+     class is toggled by the useReveal IntersectionObserver hook. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 620ms var(--ease-out), transform 620ms var(--ease-out);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* The dependency-chain thread — the signature marketing motif: a gradient
+     line that fills from Regalia (priorities) toward Orange (alignment),
+     echoing the tool's stepper connector (design.md § Signature element). */
+  .thread-line {
+    background: var(--grad-thread);
+  }
+
+  /* Marketing surface flow (design.md § Landing surface). The page reads as one
+     continuous wash: a faint architectural grid over per-section gradient bands
+     whose boundary colors line up beige → light orange → light purple → deep purple. */
+  .site-canvas {
+    background-image: var(--grid-img),
+      linear-gradient(180deg, var(--beige) 0%, #f4ecdd 100%);
+    background-size: var(--grid-size) var(--grid-size),
+      var(--grid-size) var(--grid-size), 100% 100%;
+    background-attachment: scroll;
+  }
+  .sec-1,
+  .sec-2,
+  .sec-3,
+  .sec-4 {
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: var(--grid-size) var(--grid-size),
+      var(--grid-size) var(--grid-size), 100% 100%;
+  }
+  .sec-1 {
+    background-image: var(--grid-img), var(--sec-1);
+  }
+  .sec-2 {
+    background-image: var(--grid-img), var(--sec-2);
+  }
+  .sec-3 {
+    background-image: var(--grid-img), var(--sec-3);
+  }
+  .sec-4 {
+    background-image: var(--grid-img), var(--sec-4);
+  }
+  /* Scroll-demo plateau — sits between the toolkit (ends light purple) and the CTA. */
+  .sec-demo {
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: var(--grid-size) var(--grid-size),
+      var(--grid-size) var(--grid-size), 100% 100%;
+    background-image: var(--grid-img),
+      linear-gradient(180deg, var(--wash-purple) 0%, #dccdef 100%);
+  }
+
+  /* Primary marketing CTA: warm orange gradient with a lifting hover and a slow
+     glisten that sweeps across every few seconds (design.md § Landing surface). */
+  .cta-primary {
+    position: relative;
+    overflow: hidden;
+    background-image: var(--grad-cta);
+    color: #fff;
+    transition: transform var(--dur) var(--ease-out),
+      box-shadow var(--dur) var(--ease-out), filter var(--dur) var(--ease-out);
+  }
+  .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+    filter: brightness(1.06) saturate(1.05);
+  }
+  .cta-primary:active {
+    transform: translateY(0) scale(0.985);
+  }
+  /* Shine sweeps once on hover only — no idle glisten. */
+  .cta-primary::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    bottom: -20%;
+    left: -45%;
+    width: 34%;
+    background: linear-gradient(
+      100deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.55) 50%,
+      transparent 100%
+    );
+    transform: skewX(-18deg);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .cta-primary:hover::after {
+    animation: cta-shine 0.85s ease-out;
+  }
+  @keyframes cta-shine {
+    0% {
+      left: -45%;
+      opacity: 0;
+    }
+    12% {
+      opacity: 1;
+    }
+    100% {
+      left: 130%;
+      opacity: 1;
+    }
+  }
+
+  /* Native CSS scroll-driven progress bar (design.md § Landing surface). Pure CSS via
+     animation-timeline — no JS. Degrades to invisible where unsupported (Safari/Firefox),
+     and stays hidden under reduced motion. */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    z-index: 60;
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    background: var(--grad-thread);
+  }
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .scroll-progress {
+        animation: scroll-progress-grow linear both;
+        animation-timeline: scroll(root);
+      }
+    }
+  }
+  @keyframes scroll-progress-grow {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  /* Subtle gradient sheen behind widgets so they pop off the surface. */
+  .grad-card {
+    background-image: var(--grad-card);
+  }
+
+  /* Hero entrance — pure CSS stagger (no JS dependency, so the first paint can never
+     get stuck hidden). Per-child delay set inline. Reduced motion (globals below) zeroes
+     the duration, showing everything at rest instantly. */
+  .hero-in {
+    animation: hero-rise 0.6s var(--ease-out) both;
+  }
+  @keyframes hero-rise {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Scroll-demo screen swap: only the active screen is mounted, so we fade the incoming
+     one in on remount (design.md § Landing surface). Reduced motion zeroes this below. */
+  .demo-screen {
+    animation: demo-fade 0.45s var(--ease-out) both;
+  }
+  @keyframes demo-fade {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Card hover: a slight lift + deeper shadow (design.md § Motion). */
+  .card-lift {
+    transition: transform var(--dur) var(--ease-out),
+      box-shadow var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--orange-wash);
+  }
+
+  /* Secondary marketing button: quiet, but lifts on hover to feel alive. */
+  .cta-secondary {
+    transition: transform var(--dur) var(--ease-out),
+      background-color var(--dur) var(--ease-out),
+      border-color var(--dur) var(--ease-out);
+  }
+  .cta-secondary:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media print {
+  header,
+  footer,
+  aside,
+  .print\:hidden {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .step-enter {
+    animation: none;
+  }
+  /* Marketing surface honors reduced motion: no float, reveal shown instantly. */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

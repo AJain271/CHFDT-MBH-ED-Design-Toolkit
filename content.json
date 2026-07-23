@@ -1,0 +1,4131 @@
+{
+  "config": {
+    "importance_scale": [
+      {
+        "label": "Critically Important / Essential",
+        "score": 5
+      },
+      {
+        "label": "Extremely Important",
+        "score": 4
+      },
+      {
+        "label": "Very Important",
+        "score": 3
+      },
+      {
+        "label": "Moderately Important",
+        "score": 2
+      },
+      {
+        "label": "Slightly important",
+        "score": 1
+      },
+      {
+        "label": "Not Important",
+        "score": 0
+      }
+    ],
+    "guideline_summing_scale": [
+      {
+        "label": "Critically Important / Essential",
+        "score": 6
+      },
+      {
+        "label": "Extremely Important",
+        "score": 5
+      },
+      {
+        "label": "Very Important",
+        "score": 4
+      },
+      {
+        "label": "Moderately Important",
+        "score": 3
+      },
+      {
+        "label": "Slightly important",
+        "score": 2
+      },
+      {
+        "label": "Not Important",
+        "score": 1
+      }
+    ],
+    "guideline_priority_scale": [
+      {
+        "label": "First priority",
+        "score": 6
+      },
+      {
+        "label": "Second priority",
+        "score": 5
+      },
+      {
+        "label": "Third priority",
+        "score": 4
+      },
+      {
+        "label": "Fourth priority",
+        "score": 3
+      },
+      {
+        "label": "Fifth priority",
+        "score": 2
+      },
+      {
+        "label": "Sixth priority",
+        "score": 1
+      }
+    ],
+    "implemented_scale": [
+      {
+        "label": "Yes",
+        "value": 1
+      },
+      {
+        "label": "No",
+        "value": -1
+      },
+      {
+        "label": "Maybe",
+        "value": 0
+      },
+      {
+        "label": "Not Applicable",
+        "value": 0
+      }
+    ],
+    "design_element_categories": [
+      {
+        "label": "Architectural Elements",
+        "description": "Includes major architectural elements like walls, doors, windows, skylights, etc."
+      },
+      {
+        "label": "Furnishings & Finishes",
+        "description": "Includes furniture and  finish materials (including flooring and ceiling materials, wall protection, etc.), equipment, furnishings, accessories, casework, and decoration"
+      },
+      {
+        "label": "MEP & Building Systems",
+        "description": "Includes mechanical, electrical, and plumbing elements and systems, acoustics, headwalls, lighting, etc."
+      },
+      {
+        "label": "Technology & Other Elements",
+        "description": "Includes IT and communication, security and patient monitoring, and entertainment systems and devices"
+      }
+    ],
+    "dropdowns": {
+      "yes_no": [
+        "Yes",
+        "No"
+      ],
+      "renovation_type": [
+        "Renovation",
+        "New Construction"
+      ],
+      "patient_population": [
+        "Pediatric patients only",
+        "Adult patients only",
+        "Both pediatric and adult patients"
+      ],
+      "volume_brackets": [
+        "0-5 patients",
+        "6-10 patients",
+        "11-20 patients",
+        "21-30 patients",
+        "31-40 patients",
+        "41-50 patients",
+        "51- 75 patients",
+        "76-100 patients",
+        "more than 100 patients"
+      ],
+      "importance": [
+        "Critically Important / Essential",
+        "Extremely Important",
+        "Very Important",
+        "Moderately Important",
+        "Slightly important",
+        "Not Important"
+      ],
+      "implemented": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Not Applicable"
+      ]
+    }
+  },
+  "ppt": {
+    "title": "Pre-Planning & Programming Worksheet",
+    "items": [
+      {
+        "row": 6,
+        "kind": "question",
+        "text": "What is the strategic vision for the hospital/health system?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 7,
+        "kind": "question",
+        "text": "What are the main drivers/motivators for the ED redesign (for renovation)/ design (new construction) project?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 8,
+        "kind": "question",
+        "text": "Is this project a renovation or new construction?",
+        "response_dropdown": "renovation_type",
+        "open_ended": true
+      },
+      {
+        "row": 9,
+        "kind": "question",
+        "text": "Does the ED serve pediatric patients, adult patients, or both?",
+        "response_dropdown": "patient_population",
+        "open_ended": true
+      },
+      {
+        "row": 10,
+        "kind": "question",
+        "text": "What is the anticipated total annual patient volume for this ED?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 11,
+        "kind": "question",
+        "text": "What is the anticipated total annual mental and behavioral health patient volume for this ED?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 12,
+        "kind": "question",
+        "text": "Will the ED serve any prisoners/penitentiary patients?",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      },
+      {
+        "row": 13,
+        "kind": "question",
+        "text": "What is the anticipated  proportion of uninsured patients in the ED?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 14,
+        "kind": "question",
+        "text": "Approximately what percentage of patients that will be seen in this ED (for all visit reasons) are:",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 15,
+        "kind": "subitem",
+        "text": "a. Children under age 5",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 16,
+        "kind": "subitem",
+        "text": "b. Children aged 5-12",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 17,
+        "kind": "subitem",
+        "text": "c. Adolescents aged 13-18",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 18,
+        "kind": "subitem",
+        "text": "d. Young Adults aged 18-24",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 19,
+        "kind": "subitem",
+        "text": "e. Adults aged 25-65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 20,
+        "kind": "subitem",
+        "text": "f. Adults over age 65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 21,
+        "kind": "question",
+        "text": "Based on the ED's annual patient data (last 5 years), please share the annual patient volumes for each these categories.",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 22,
+        "kind": "subitem",
+        "text": "i. Suicidal Behavior & Risk",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 23,
+        "kind": "subitem",
+        "text": "a. Children under age 5",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 24,
+        "kind": "subitem",
+        "text": "b. Children aged 5-12",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 25,
+        "kind": "subitem",
+        "text": "c. Adolescents aged 13-18",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 26,
+        "kind": "subitem",
+        "text": "d. Young Adults aged 18-24",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 27,
+        "kind": "subitem",
+        "text": "e. Adults aged 25-65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 28,
+        "kind": "subitem",
+        "text": "f. Adults over age 65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 29,
+        "kind": "subitem",
+        "text": "ii. Aggressive Behaviors",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 30,
+        "kind": "subitem",
+        "text": "a. Children under age 5",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 31,
+        "kind": "subitem",
+        "text": "b. Children aged 5-12",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 32,
+        "kind": "subitem",
+        "text": "c. Adolescents aged 13-18",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 33,
+        "kind": "subitem",
+        "text": "d. Young Adults aged 18-24",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 34,
+        "kind": "subitem",
+        "text": "e. Adults aged 25-65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 35,
+        "kind": "subitem",
+        "text": "f. Adults over age 65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 36,
+        "kind": "subitem",
+        "text": "iii. Neurocognitive Disorders",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 37,
+        "kind": "subitem",
+        "text": "a. Children under age 5",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 38,
+        "kind": "subitem",
+        "text": "b. Children aged 5-12",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 39,
+        "kind": "subitem",
+        "text": "c. Adolescents aged 13-18",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 40,
+        "kind": "subitem",
+        "text": "d. Young Adults aged 18-24",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 41,
+        "kind": "subitem",
+        "text": "e. Adults aged 25-65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 42,
+        "kind": "subitem",
+        "text": "f. Adults over age 65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 43,
+        "kind": "subitem",
+        "text": "iv. Substance Use and Addictive Disorder",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 44,
+        "kind": "subitem",
+        "text": "a. Children under age 5",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 45,
+        "kind": "subitem",
+        "text": "b. Children aged 5-12",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 46,
+        "kind": "subitem",
+        "text": "c. Adolescents aged 13-18",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 47,
+        "kind": "subitem",
+        "text": "d. Young Adults aged 18-24",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 48,
+        "kind": "subitem",
+        "text": "e. Adults aged 25-65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 49,
+        "kind": "subitem",
+        "text": "f. Adults over age 65",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 50,
+        "kind": "question",
+        "text": "Based on the ED's annual patient data (last 5 years), please share the weekly patient volumes for each these categories.",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 51,
+        "kind": "subitem",
+        "text": "i. MBH Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 52,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 53,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 54,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 55,
+        "kind": "subitem",
+        "text": "ii. Medical Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 56,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 57,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 58,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 59,
+        "kind": "subitem",
+        "text": "iii. Both Medical & MBH Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 60,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 61,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 62,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 63,
+        "kind": "question",
+        "text": "Do you anticipate any seasonal variations in the weekly patient volumes? If yes, please share your anticipated weekly patient volumes during peak season.",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 64,
+        "kind": "subitem",
+        "text": "i. MBH Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 65,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 66,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 67,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 68,
+        "kind": "subitem",
+        "text": "ii. Medical Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 69,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 70,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 71,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 72,
+        "kind": "subitem",
+        "text": "iii. Both Medical & MBH Conditions",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 73,
+        "kind": "subitem",
+        "text": "a. Children aged 0-12",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 74,
+        "kind": "subitem",
+        "text": "b. Adolescents aged 13-18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 75,
+        "kind": "subitem",
+        "text": "c. Adults aged over 18",
+        "response_dropdown": "volume_brackets",
+        "open_ended": true
+      },
+      {
+        "row": 76,
+        "kind": "question",
+        "text": "Based on the ED's annual patient data (last 5 years), what is the typical length of stay for MBH patients in the ED?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 77,
+        "kind": "question",
+        "text": "Do you anticipate implementing any of the following care models:",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 78,
+        "kind": "subitem",
+        "text": "a. Separate EmPATH/crisis unit",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      },
+      {
+        "row": 79,
+        "kind": "subitem",
+        "text": "b.  Dedicated Mental/Behavioral Health unit for adult/pediatric patients",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      },
+      {
+        "row": 80,
+        "kind": "subitem",
+        "text": "c. Separate care pathway for pediatric Mental/Behavioral Health patients",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      },
+      {
+        "row": 81,
+        "kind": "subitem",
+        "text": "d. Boarding pediatric MBH patients in in-patient rooms on medical floors",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      },
+      {
+        "row": 82,
+        "kind": "question",
+        "text": "What are the discharge options for:",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 83,
+        "kind": "subitem",
+        "text": "a.  Inpatient psychiatric care within your hospital",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 84,
+        "kind": "subitem",
+        "text": "b.  Inpatient psychiatric care in your community?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 85,
+        "kind": "subitem",
+        "text": "c. Outpatient psychiatric care in your community?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 86,
+        "kind": "question",
+        "text": "Based on your anticipated patient volume, how many total exam rooms would you like to have in the ED?",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 87,
+        "kind": "question",
+        "text": "Based on your anticipated MBH VOLUME, approximately what percentage of ED patient rooms will be utilized as:",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 88,
+        "kind": "subitem",
+        "text": "a. Only mental and behavioral health needs",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 89,
+        "kind": "subitem",
+        "text": "b. Only medical needs",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 90,
+        "kind": "subitem",
+        "text": "c. Both medical and mental/behavioral health needs",
+        "response_dropdown": null,
+        "open_ended": true
+      },
+      {
+        "row": 91,
+        "kind": "question",
+        "text": "Do you anticipate having a locked ED Unit?",
+        "response_dropdown": "yes_no",
+        "open_ended": true
+      }
+    ]
+  },
+  "outcome_prioritization": {
+    "title": "Design Objectives Worksheet",
+    "objectives": [
+      {
+        "objective": "Improve Safety & Security",
+        "outcomes": [
+          {
+            "row": 12,
+            "outcome": "Preventing Self Harm",
+            "description": "Preventing self-harm involves implementing strategies to identify at-risk individuals, provide timely support, and reduce factors that contribute to self-injurious behaviors."
+          },
+          {
+            "row": 13,
+            "outcome": "Preveting Elopement",
+            "description": "Preventing elopement involves implementing strategies and interventions to reduce the risk of individuals from leaving a safe environment without supervision."
+          },
+          {
+            "row": 14,
+            "outcome": "Quicker response in emergency events",
+            "description": "Ensure rapid identification and intervention in emergencies and (self) harm incidents to minimize risk, providing immediate support from healthcare staff."
+          },
+          {
+            "row": 15,
+            "outcome": "Perception of safety",
+            "description": "Perception of Safety refers to individuals’ feelings and beliefs about how safe they are in a given environment."
+          },
+          {
+            "row": 16,
+            "outcome": "Quick response to patient-initiated harm",
+            "description": "Improve the speed and effectiveness of interventions when patients initiate harm to others or to the environment."
+          },
+          {
+            "row": 17,
+            "outcome": "Reduce patient-initiated harm",
+            "description": "Reduce patient-initiated harm aims to minimize incidents where patients cause harm to themselves, staff, or others within the healthcare setting."
+          },
+          {
+            "row": 18,
+            "outcome": "Reduce need for restraints",
+            "description": "Reduce the frequency and necessity of using physical or chemical restraints."
+          },
+          {
+            "row": 19,
+            "outcome": "Reduce exposure to triggering content",
+            "description": "Reduced exposure to triggering content aims to minimize an individual's contact with situations, media or people that may provoke distressing emotions or reactions."
+          },
+          {
+            "row": 20,
+            "outcome": "Enhances patient visibility",
+            "description": "Provide visual access to the patient, improving the ability of healthcare providers to access, track, and monitor patient information in real time."
+          }
+        ]
+      },
+      {
+        "objective": "Optimize Efficiency & Effectiveness",
+        "outcomes": [
+          {
+            "row": 21,
+            "outcome": "Reduce staff workload (physical and cognitive)",
+            "description": "Implement strategies and tools to minimize manual and mental, reducing the overall workload and task demmands for staff."
+          },
+          {
+            "row": 22,
+            "outcome": "Reduce ED waiting times and/or length of stay",
+            "description": "Implement targeted process improvements to reduce emergency department waiting times and overall length of stay."
+          },
+          {
+            "row": 23,
+            "outcome": "Adequate care for co-occurring med/psych conditions",
+            "description": "Ensure that individuals receive appropriate assessment, treatment, and ongoing management for both medical and psychiatric conditions."
+          },
+          {
+            "row": 24,
+            "outcome": "Improved coordination of patient flow",
+            "description": "Streamline the movement of patients through the ED during various stages of care, ensuring timely admissions, transfers, and discharges."
+          },
+          {
+            "row": 25,
+            "outcome": "Provision of appropriate psych care in the ED",
+            "description": "Ensure that patients presenting to the ED with MBH concerns receive timely assessment, stabilization, and access to appropriate psychiatric interventions."
+          }
+        ]
+      },
+      {
+        "objective": "Improve Communication",
+        "outcomes": [
+          {
+            "row": 26,
+            "outcome": "Enhance team coordination and collaboration",
+            "description": "Foster a collaborative environment to ensure team members work effectively together towards shared goals."
+          },
+          {
+            "row": 27,
+            "outcome": "Quick response from medical team",
+            "description": "Ensure that the medical care teams provide timely and effective responses to urgent situations and codes."
+          },
+          {
+            "row": 28,
+            "outcome": "Streamlined flow of information",
+            "description": "Optimizing communication channels and processes to ensure that relevant data and updates are efficiently shared among care team members."
+          },
+          {
+            "row": 29,
+            "outcome": "Support staff and resident training",
+            "description": "Provide comprehensive support to allow staff and resident training in the ED"
+          },
+          {
+            "row": 30,
+            "outcome": "Reduced miscommunication with family members",
+            "description": "Provide clarity of information in interactions with family members, minimizing misunderstandings."
+          }
+        ]
+      },
+      {
+        "objective": "Improve Overall Comfort for All Users",
+        "outcomes": [
+          {
+            "row": 31,
+            "outcome": "Enhance Patient and family satisfaction",
+            "description": "Enhance the satisfaction and emotional well-being of patients and their families by addressing their needs, preferences, and concerns."
+          },
+          {
+            "row": 32,
+            "outcome": "Improve Patient and family comfort",
+            "description": "Enhance the physical and physiological well-being of patients and their families."
+          },
+          {
+            "row": 33,
+            "outcome": "Reduce anxiety",
+            "description": "Reduces anxiety by promoting relaxation, calming the mind, and decreasing feelings of worry or nervousness."
+          },
+          {
+            "row": 34,
+            "outcome": "Reduce crowding",
+            "description": "Minimize the number of people in a given space at one time, to reduce the discomfort and stress associated with the perception of being crowded"
+          },
+          {
+            "row": 35,
+            "outcome": "Enhanced staff satisfaction",
+            "description": "Enhanced staff satisfaction focuses on improving the emotional well-being, engagement, and morale of employees"
+          }
+        ]
+      },
+      {
+        "objective": "Improve Patient and Family Agency",
+        "outcomes": [
+          {
+            "row": 36,
+            "outcome": "Facilitating family participation in care",
+            "description": "Encourage and support family involvement in the patient’s care and empower to participate in decision-making and care activities."
+          },
+          {
+            "row": 37,
+            "outcome": "Promoting trust and rapport",
+            "description": "Establishes a positive, respectful, and empathetic environment to the patient and family members need"
+          },
+          {
+            "row": 38,
+            "outcome": "Safeguard patient confidential information",
+            "description": "Ensure that all patient information is protected from unauthorized access, disclosure, or misuse by following established privacy policies and practices such as HIPAA."
+          },
+          {
+            "row": 39,
+            "outcome": "Limits being seen by others",
+            "description": "Reduce the likelihood that of patients to be exposed to other patients or the general public after being admitted to ED."
+          }
+        ]
+      },
+      {
+        "objective": "Provide Patient Choice and Control",
+        "outcomes": [
+          {
+            "row": 40,
+            "outcome": "Reduce agitation & boredom",
+            "description": "Reduces agitation and boredom, minimizing restlessness and disruptive behaviors."
+          },
+          {
+            "row": 41,
+            "outcome": "Enhance sense of dignity",
+            "description": "Foster an environment where individuals feel respected, valued, and empowered, promoting self-worth and personal pride in all interactions and activities."
+          },
+          {
+            "row": 42,
+            "outcome": "Improve emotional & sleep regulation",
+            "description": "Enhance the ability to manage emotions and establish healthy sleep routines while in the ED"
+          }
+        ]
+      }
+    ],
+    "note": "User rates each outcome's Importance. Objective value = AVERAGE of its outcomes' importance scores (0-5). Objectives then ranked high->low into priority order (SORTBY)."
+  },
+  "guideline_prioritization": {
+    "title": "Design Guidelines Prioritization Worksheet",
+    "guidelines": [
+      {
+        "row": 12,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "related_objectives": [
+          "Improve Safety & Security"
+        ]
+      },
+      {
+        "row": 13,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Optimize Efficiency & Effectiveness",
+          "Improve Overall Comfort for all users"
+        ]
+      },
+      {
+        "row": 14,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Improve Overall Comfort for all users"
+        ]
+      },
+      {
+        "row": 15,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Optimize Efficiency & Effectiveness",
+          "Improve Communication",
+          "Improve Overall Comfort for all users"
+        ]
+      },
+      {
+        "row": 16,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "related_objectives": [
+          "Improve Safety & Security"
+        ]
+      },
+      {
+        "row": 17,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Optimize Efficiency & Effectiveness"
+        ]
+      },
+      {
+        "row": 18,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "7. Provide opportunities for staff respite",
+        "related_objectives": [
+          "Improve Overall Comfort for all users"
+        ]
+      },
+      {
+        "row": 19,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "8. Support effective communication among staff",
+        "related_objectives": [
+          "Optimize Efficiency & Effectiveness",
+          "Improve Communication",
+          "Improve Overall Comfort for all users"
+        ]
+      },
+      {
+        "row": 20,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "related_objectives": [
+          "Improve Communication",
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency"
+        ]
+      },
+      {
+        "row": 21,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "related_objectives": [
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency",
+          "Provide Patient Choice and Control"
+        ]
+      },
+      {
+        "row": 22,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "11. Create opportunities for auditory and visual privacy",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Improve Communication",
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency",
+          "Provide Patient Choice and Control"
+        ]
+      },
+      {
+        "row": 23,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "related_objectives": [
+          "Improve Overall Comfort for all users",
+          "Provide Patient Choice and Control"
+        ]
+      },
+      {
+        "row": 24,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "related_objectives": [
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency",
+          "Provide Patient Choice and Control"
+        ]
+      },
+      {
+        "row": 25,
+        "category": "Organizational Performance",
+        "guideline": "14.Support clarity and anticipation of the care path and steps in the healthcare experience.",
+        "related_objectives": [
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency",
+          "Provide Patient Choice and Control"
+        ]
+      },
+      {
+        "row": 26,
+        "category": "Organizational Performance",
+        "guideline": "15. Provide timely access to psychiatric care",
+        "related_objectives": [
+          "Improve Safety & Security",
+          "Optimize Efficiency & Effectiveness",
+          "Improve Overall Comfort for all users",
+          "Improve Patient and Family Agency"
+        ]
+      }
+    ],
+    "note": "Each guideline's derived importance = ROUND( sum over related objectives of that objective's priority-order score (guideline_priority_scale) / count_of_related_objectives ), mapped back to an importance label. User may override via 'Review Importance'."
+  },
+  "policy_process": {
+    "title": "Stakeholder Engagement & Design Discussion Worksheet",
+    "items": [
+      {
+        "row": 9,
+        "section": "Screening",
+        "consideration": "Security Screening:",
+        "design_implication_question": "a. What equipment/system do you anticipate using for screening patients and care partners before entering the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others"
+        ]
+      },
+      {
+        "row": 10,
+        "section": "Screening",
+        "consideration": "Security Screening:",
+        "design_implication_question": "b. Where do you anticipate screening patients and care partners before entering the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 12,
+        "section": "Screening",
+        "consideration": "Mental & Behavioral Health (MBH) Screening:",
+        "design_implication_question": "a. Do you anticipate having an alternate route for taking aggressive/suicidal patients to the patient room after screening?",
+        "relevant_design_elements": [
+          "Architectural Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Reduce agitation & boredom"
+        ]
+      },
+      {
+        "row": 13,
+        "section": "Screening",
+        "consideration": "Mental & Behavioral Health (MBH) Screening:",
+        "design_implication_question": "a. Where do you anticipate the MBH patients will wait in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Perception of safety",
+          "Reduce exposure to triggering content",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Limits being seen by others",
+          "Reduce agitation & boredom"
+        ]
+      },
+      {
+        "row": 14,
+        "section": "Screening",
+        "consideration": "Mental & Behavioral Health (MBH) Screening:",
+        "design_implication_question": "b. How do you anticipate minimizing ligature risks in the MBH waiting space?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 15,
+        "section": "Screening",
+        "consideration": "Mental & Behavioral Health (MBH) Screening:",
+        "design_implication_question": "c. How do you anticipate minimizing elopement risks in the MBH waiting space?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 16,
+        "section": "Screening",
+        "consideration": "Mental & Behavioral Health (MBH) Screening:",
+        "design_implication_question": "d. How do you anticipate engaging/distracting MBH patients and their care partners in the ED waiting area?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 19,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Triaging:",
+        "design_implication_question": "a. Where do you anticipate triaging MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Quick response from medical team",
+          "Reduce anxiety",
+          "Safeguard patient confidential information",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 20,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Triaging:",
+        "design_implication_question": "b. How do you anticipate minimizing ligature points in the triaging space?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 21,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Triaging:",
+        "design_implication_question": "c. How do you anticipate maintaining privacy in the ED triage room?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 23,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Where do you anticipate locating MBH patient care spaces in the ED to improve situational awareness?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Quick response from medical team",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 24,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "b. If you intend to use any specific technology/equipment (e.g. cameras) to improve situational awareness, where do you anticipate locating them? Where do you anticipate locating the screens that will be used for monitored?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 25,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "c. Do you anticipate using the same room for MBH and non-MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 26,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "d. Do you anticipate having dedicated MBH rooms in the ED? How many?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 27,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "e. Do you anticipate having specific pediatric MBH friendly ED exam rooms? How many?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 28,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Where do you anticipate storing the equipment and supplies while ligature-minimizing the room?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Reduce anxiety",
+          "Enhanced staff satisfaction",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 29,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "b. Do you plan to implement flexible ED-exam rooms that may be used for both MBH and non-MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 30,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Do you anticipate having designated areas for dedicated hallway beds for MBH patients? Where would you prefer them?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 31,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "b. How do you anticipate using hallway beds for providing care to MBH patients?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 32,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "c. Where do you anticipate having private conversations with MBH patients during assessments in hallways beds?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 33,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "d. Where do you anticipate having private conversations with care partners of MBH patients during assessments in hallways beds?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 34,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "e. How do you anticipate improving safety and minimizing ligature risks for MBH patients in hallway beds?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 35,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. What features/equipment do you anticipate using within the ED to prevent elopement for MBH patient?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 36,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Where do you anticipate accommodating high volumes of MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 37,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Where do you anticipate locating spaces for adult and pediatric MBH patients in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 38,
+        "section": "Triaging & Initial Assessment",
+        "consideration": "Bed Allocation:",
+        "design_implication_question": "a. Where do you anticipate locating adolescent or older pediatric MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 41,
+        "section": "Diagnostic Consideration",
+        "consideration": "Changing:",
+        "design_implication_question": "a. Where do you anticipate storing patient gowns or scrubs for MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Improve Patient and family comfort",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 42,
+        "section": "Diagnostic Consideration",
+        "consideration": "Changing:",
+        "design_implication_question": "b. Where do you anticipate changing out MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 43,
+        "section": "Diagnostic Consideration",
+        "consideration": "Changing:",
+        "design_implication_question": "a. How do you anticipate accommodating cultural beliefs related to modesty/privacy in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Reduce staff workload (physical and cognitive)",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Reduce anxiety",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 45,
+        "section": "Diagnostic Consideration",
+        "consideration": "Patient Belongings:",
+        "design_implication_question": "a. Where do you anticipate storing and retrieving the personal belongings of MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Reduce staff workload (physical and cognitive)",
+          "Improved coordination of patient flow",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 47,
+        "section": "Diagnostic Consideration",
+        "consideration": "Patient Observation:",
+        "design_implication_question": "a. How do you anticipate observing MBH patients in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Quick response from medical team",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Limits being seen by others",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 48,
+        "section": "Diagnostic Consideration",
+        "consideration": "Patient Observation:",
+        "design_implication_question": "b. How do you anticipate documenting notes from patient observers?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 49,
+        "section": "Diagnostic Consideration",
+        "consideration": "Patient Observation:",
+        "design_implication_question": "c. Where do you anticipate locating equipment/staff members for patient observation?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 51,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "a. What equipment might you need to conduct medical assessments for MBH and dual diagnosis patients?",
+        "relevant_design_elements": [
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Quick response from medical team",
+          "Streamlined flow of information",
+          "Support staff and resident training",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 52,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "b. Where do you anticipate storing these equipment?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 53,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "c. In case you need a urine sample, which toilet do you anticipate MBH patients using for this?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 54,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "a. For in-person interpreters, how do you anticipate integrating them within the care spaces?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 55,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "b. How do you plan to connect with remote/virtual interpreters?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 56,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "c. For remote interpreters, where do you anticipate storing equipment during and after consultations?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 57,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "d. Do you anticipate using tele-psych equipment for remote interpreters? If yes, where do you anticipate storing equipment during and after consultations?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 58,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "a. What kind of equipment do you anticipate using for charting and documentation?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Support staff and resident training",
+          "Enhanced staff satisfaction",
+          "Safeguard patient confidential information"
+        ]
+      },
+      {
+        "row": 59,
+        "section": "Diagnostic Consideration",
+        "consideration": "Medical Assessment:",
+        "design_implication_question": "b. Where do you anticipate docking/storing this equipment when not in use?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 62,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "a. Where in the ED do you anticipate accommodating workstations/equipment for MBH care providers (social workers/psychiatrists)?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce need for restraints",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Enhance Patient and family satisfaction",
+          "Reduce anxiety",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 63,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "b. Where do you anticipate having private conversations with MBH patients during assessments?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 64,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "c. Where do you anticipate having private conversations with parents of MBH patients during assessments?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 65,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "a. Where do you anticipate conducting tele-psych consultations?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Enhance Patient and family satisfaction",
+          "Reduce anxiety",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information"
+        ]
+      },
+      {
+        "row": 66,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "b. What kind of equipment would you need for conducting tele-psych consultations?",
+        "relevant_design_elements": [
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 67,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "c. Where do you anticipate storing these equipment when they are not in use?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 68,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "a. Do you anticipate having shared workstations for MBH care team members in the ED?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Support staff and resident training",
+          "Reduced miscommunication with family members",
+          "Enhanced staff satisfaction"
+        ]
+      },
+      {
+        "row": 69,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "b. Where do you anticipate locating workstations for medical and MBH clinicians in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 70,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "c. Do you anticipate using any technology/equipment/system for care team members to coordinate MBH care processes?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 71,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "d. Do you anticipate having a space for care team members to have private conversations about their MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 72,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "a. Do you anticipate using any equipment/feature/technology to share care plans and processes with MBH patients and their care partners?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Streamlined flow of information",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Enhanced staff satisfaction",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information"
+        ]
+      },
+      {
+        "row": 73,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Assessment:",
+        "design_implication_question": "b. Where do you anticipate locating these equipment/features?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 75,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. What system do you anticipate having in the patient room to communicate with nurses?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team",
+          "Streamlined flow of information",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport"
+        ]
+      },
+      {
+        "row": 76,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "b. Where do you anticipate locating these equipment/features in the room?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 77,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "c. How do you anticipate patients or care partners communicating with ED nurses from the hallway beds?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 78,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. Where do you anticipate locating these patient toilets/bathrooms/showers in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Promoting trust and rapport",
+          "Limits being seen by others",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 79,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "b. Do you anticipate having ligature-minimized toilets/bathrooms/showers for MBH patients in the ED? How many?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 80,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "c. How do you anticipate minimizing ligature and elopement risks while transporting MBH patients to the toilets/bathrooms/showers?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 81,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. What kinds of activities do you anticipate having for engaging MBH patients in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Reduce agitation & boredom",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 82,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "b. What kinds of spaces might you need for performing these activities?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 83,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "c. What kind of equipment (if at all) might you need to perform these activities and where might you store them during/after the activity?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 84,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "d. What additional amenities (e.g., food & water), if at all, do you anticipate providing for MBH patients staying in the ED for longer periods of time?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 85,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. Where do you anticipate accommodating care partners of MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport"
+        ]
+      },
+      {
+        "row": 86,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "b. What amenities (water & food options) would you like to provide for care partners of MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 87,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "c. What additional spaces (e.g. spaces for sleeping, showering, etc.) do you anticipate providing for care partners of MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 88,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. Where do you anticipate accommodating these patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce crowding",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 89,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. Where do you anticipate accommodating care partners when they are separated from the MBH patient?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce exposure to triggering content",
+          "Provision of appropriate psych care in the ED",
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 90,
+        "section": "MBH Consultation & Management",
+        "consideration": "MBH Boarding/Waiting:",
+        "design_implication_question": "a. How do you anticipate connecting the dedicated MBH care spaces to the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Reduce ED waiting times and/or length of stay",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED",
+          "Reduce crowding",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 93,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "a. Where do you anticipate performing de-escalation measures in the ED?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Limits being seen by others",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 94,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "b. What might you need in the room/space for de-escalating patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 95,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "a. How do you plan to adapt the room sensory environment (e.g. light, sound, temperature, texture, smell)?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 96,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "b. What features of the patient room do you anticipate adapting?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 97,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "c. Who would control these sensory adaptations (e.g. patient/care partner/staff)?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 98,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "d. How do you anticipate deactivating features within the room (e.g. sensory adaptations, alarms, sinks, etc.) in case MBH patients misuse them?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 99,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "a. Where do you anticipate storing physical/chemical restraints for MBH patients?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 100,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "b. How many staff members would you need to administer physical/chemical restraints on MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 101,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "c. What system/device do you anticipate staff members using to communicate with each other?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 102,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "d. Where do you anticipate locating these systems/devices?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 103,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "e. Where do you anticipate holding post-restraint debriefs?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 104,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "De-escalation & Restraints:",
+        "design_implication_question": "a. Where do you anticipate staff members storing their equipment before interacting with MBH patients?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Provision of appropriate psych care in the ED",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 106,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "Staff Safety:",
+        "design_implication_question": "a. What type of safety systems/equipment do you anticipate using?",
+        "relevant_design_elements": [
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Enhances patient visibility",
+          "Reduce staff workload (physical and cognitive)",
+          "Enhance team coordination and collaboration",
+          "Quick response from medical team",
+          "Enhanced staff satisfaction"
+        ]
+      },
+      {
+        "row": 107,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "Staff Safety:",
+        "design_implication_question": "b. Where do you anticipate locating these safety systems/equipment?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 108,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "Staff Safety:",
+        "design_implication_question": "a. What system/device do you anticipate staff members using to communicate with security/law enforcement personnel?",
+        "relevant_design_elements": [
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce staff workload (physical and cognitive)",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Enhanced staff satisfaction",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 109,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "Staff Safety:",
+        "design_implication_question": "b. At which locations do you anticipate having these systems/devices?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 110,
+        "section": "Managing Acutely Agitated or Aggressive Patients",
+        "consideration": "Staff Safety:",
+        "design_implication_question": "a. Where do you anticipate locating these break/respite spaces for staff members?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Enhanced staff satisfaction"
+        ]
+      },
+      {
+        "row": 113,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "a. How do you anticipate transporting the patient?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": [
+          "Preventing Self Harm",
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Improved coordination of patient flow",
+          "Enhance team coordination and collaboration",
+          "Streamlined flow of information",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 114,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "b. Where do you anticipate handing off the patient to personnel in charge of the transportation?",
+        "relevant_design_elements": [
+          "Architectural Elements",
+          "Furnishings & Finishes",
+          "MEP & Building Systems",
+          "Technology & Other Elements"
+        ],
+        "related_outcomes": []
+      },
+      {
+        "row": 117,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "Includes major architectural elements like walls, doors, windows, skylights, etc.",
+        "relevant_design_elements": [],
+        "related_outcomes": []
+      },
+      {
+        "row": 118,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "Includes furniture and  finish materials (including flooring and ceiling materials, wall protection, etc.), equipment, furnishings, accessories, casework, and decoration",
+        "relevant_design_elements": [],
+        "related_outcomes": []
+      },
+      {
+        "row": 119,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "Includes mechanical, electrical, and plumbing elements and systems, acoustics, headwalls, lighting, etc.",
+        "relevant_design_elements": [],
+        "related_outcomes": []
+      },
+      {
+        "row": 120,
+        "section": "Disposition Planning & Handoff",
+        "consideration": "Patient Transfer",
+        "design_implication_question": "Includes IT and communication, security and patient monitoring, and entertainment systems and devices",
+        "relevant_design_elements": [],
+        "related_outcomes": []
+      }
+    ],
+    "note": "Per row: open-ended design response. Score = SUMPRODUCT of related outcomes' importance scores; Round; map to importance label. Discussion/prioritization aid."
+  },
+  "design_alignment": {
+    "title": "Design Alignment Tool",
+    "strategies": [
+      {
+        "row": 4,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.1The patient's head and limbs can be seen from the hallway when they are in the bed/chair.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 5,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.2. There are no blind spots or hiding spots inside the room when looking from the hallway/doorway.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 6,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.4. Surveillance cameras provide direct visual access to the room's door(s) and any other access points.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 7,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.5 Surveillance cameras are discretely integrated into the design.",
+        "design_feature_category": "Technology & other elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 8,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.6. Doors do not lock from the inside. If present, any locks are on the outside (department/hallway side) of the door.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preveting Elopement",
+          "Quicker response in emergency events",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 9,
+        "category": "Patient Safety",
+        "guideline": "1. Maximize staff's situational awareness of the patient",
+        "strategy": "1.7. Space for an observer (chair, alcove, etc.) is positioned so that it has direct visual access to the room's door(s) and any other access points.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preveting Elopement",
+          "Enhances patient visibility"
+        ]
+      },
+      {
+        "row": 10,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.1. If located in the room, the sink and all its parts (handles, faucets, etc.) are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 11,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.2. If located in the room, the computer workstation and all its parts (mounting, monitor, cords, etc.) are removable and/or ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints"
+        ]
+      },
+      {
+        "row": 12,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.3. Any televisions and/or entertainment devices in the room and all their parts ( screens, controls, etc.) are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 13,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.4. Any emergency call buttons or other communication devices in the room are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 14,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.5. Any dispensers or other accessories present in the room are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 15,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.6. Every element in the room that could pose a ligature or weaponization risk can be made inaccessible to patients.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints"
+        ]
+      },
+      {
+        "row": 16,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.7. The patient does not have any access to slats, cords, mechanical components or any other parts of window treatments that could pose a weaponization, harm, or ligature risk.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 17,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.8. Furniture, fixtures, and surfaces do not have sharp edges, protruding elements, joints, or gaps that could be used for weaponization, harm, or ligature.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 18,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.9. Casework and hardware are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints"
+        ]
+      },
+      {
+        "row": 19,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.10. Casework and furnishings are designed to prevent patients from climbing.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 20,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.11. All electrical and mechanical fixtures (including switches, receptacles, grilles, etc.) are ligature-minimized and tamper-resistant.",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 21,
+        "category": "Patient Safety",
+        "guideline": "2. Reduce opportunities for the patient to cause harm",
+        "strategy": "2.12. The ceiling is ligature-minimized and tamper-resistant.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 22,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "strategy": "3.1. The patient bed/chair is oriented away from direct view of the hallway to minimize the patient's exposure to ED activities that may be over-stimulating or distressing.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce exposure to triggering content",
+          "Reduce anxiety",
+          "Limits being seen by others"
+        ]
+      },
+      {
+        "row": 23,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "strategy": "3.2 The room's design minimizes direct visual exposure of the patient from the hallway.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce exposure to triggering content",
+          "Reduce anxiety",
+          "Limits being seen by others"
+        ]
+      },
+      {
+        "row": 24,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "strategy": "3.3. The emergency call button and/or communication device is easily accessible from the patient bed/chair.",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": [
+          "Quick response to patient-initiated harm",
+          "Reduce anxiety"
+        ]
+      },
+      {
+        "row": 25,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "strategy": "3.4.The emergency call button and/or communication device is easily accessible to the care partner(s).",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": [
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce anxiety"
+        ]
+      },
+      {
+        "row": 26,
+        "category": "Patient Safety",
+        "guideline": "3. Enhance sense of security for the patient and caregiver",
+        "strategy": "3.5. Staff can supervise and/or curate entertainment and media options accessible to the patient",
+        "design_feature_category": "Technology & Other Elements",
+        "served_outcomes": []
+      },
+      {
+        "row": 27,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.1. The sink (either inside or outside the room) is immediately visible and accessible to the room's entrance.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 28,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.2. Hand sanitizer, gloves, and other PPE are immediately accessible and visible to the room's entrance.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 29,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.3. There is a dedicated surface near the sink for placing items during handwashing.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Improve Patient and family comfort"
+        ]
+      },
+      {
+        "row": 30,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.4. All fixtures, finishes, and furnishings are easy to clean.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 31,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.5. The waste bin is easy for staff members to access while being out of the patient's immediate reach.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 32,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.6. Any adjacent surfaces to the sink are protected from water splashes (via splash guards or other means).",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 33,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.7. Care provider furniture can easily be moved to accommodate staff and patient needs.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Reduce crowding"
+        ]
+      },
+      {
+        "row": 34,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.8. There is a clearly defined zone for a patient observer, out of the way of key staff workflows.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response from medical team",
+          "Reduce crowding"
+        ]
+      },
+      {
+        "row": 35,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.9. Patient observer furniture can easily be moved to accommodate varying needs.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED",
+          "Quick response from medical team",
+          "Reduce crowding"
+        ]
+      },
+      {
+        "row": 36,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.10. It is possible for a patient observer to sit within arms' length of the patient without blocking staff workflows.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response from medical team",
+          "Reduce crowding"
+        ]
+      },
+      {
+        "row": 37,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.11. The computer workstation (either fixed or mobile) is positionable such that staff can maintain a clear line of sight to the patient while using the workstation.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 38,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.12. The patient bed and/or chair can be moved in and out of the room with ease.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 39,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.13. The room door size, type, and location supports rapid, unobstructed entry into the room and to the patient bed and/or chair.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 40,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.14. The vitals monitor is positioned to be conveniently visible and unobstructed to staff",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Adequate care for co-occurring med/psych conditions",
+          "Quick response from medical team",
+          "Streamlined flow of information"
+        ]
+      },
+      {
+        "row": 41,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.15. The headwall is positioned and kept free of obstructions, providing adequate working clearance so staff can quickly reach and operate all receptacles, devices, and connections.",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 42,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.16. The headwall has all necessary medical gas outlets and electrical receptacles to power equipment.",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Adequate care for co-occurring med/psych conditions"
+        ]
+      },
+      {
+        "row": 43,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.17. Emergency supplies/supply storage are unobstructed, easily accessible, and immediately visible upon entering the room",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 44,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.18. Medical supplies/supply storage are unobstructed, easily accessible, and immediately visible upon entering the room",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 45,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.19 A sharps container is easily accessible to staff",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)"
+        ]
+      },
+      {
+        "row": 46,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.20. Storage is easily accessible and not blocked by equipment or staff workflows",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 47,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.21. The computer workstation (whether fixed or mobile), is positioned (or can be positioned) such that it is easy to access and will not be blocked by mobile equipment or staff workflows.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 48,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.22. The procedures workstation (whether fixed or mobile), is positioned (or can be positioned) such that it is easy to access and will not be blocked by mobile equipment or staff workflows",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 49,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.23. Opening and closing the door does not conflict with or obstruct workflows",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Quick response to patient-initiated harm",
+          "Reduce staff workload (physical and cognitive)",
+          "Quick response from medical team"
+        ]
+      },
+      {
+        "row": 50,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.24. Lighting allows for uniform, adequate illumination to perform examinations",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Adequate care for co-occurring med/psych conditions"
+        ]
+      },
+      {
+        "row": 51,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "4. Optimize staff workflow",
+        "strategy": "4.25. Lighting allows for adjustability in brightness and/or directionality",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Adequate care for co-occurring med/psych conditions"
+        ]
+      },
+      {
+        "row": 52,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.1. The door's design (e.g., size, hardware, operation, location) facilitates rapid staff escape and provides an unobstructed exit pathway.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Perception of safety",
+          "Quick response to patient-initiated harm"
+        ]
+      },
+      {
+        "row": 53,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.2. Patients cannot use the furniture in the room to trap staff members",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Perception of safety",
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others"
+        ]
+      },
+      {
+        "row": 54,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.3. The room's layout allows staff to position themselves between the patient and the exit during monitoring and treatment to mitigate the potential of the patient trapping staff members in the room.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Perception of safety",
+          "Quick response to patient-initiated harm"
+        ]
+      },
+      {
+        "row": 55,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.4 The patient bed, if provided, can move to be accessed from all sides so two or more staff members can safely conduct de-escalation and/or restraint tasks.",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 56,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.5. The patient cannot access the contents of the sharps container.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Quick response to patient-initiated harm",
+          "Reduce harm aggainst others"
+        ]
+      },
+      {
+        "row": 57,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "5. Improve safety and security for staff",
+        "strategy": "5.6. Patients cannot throw the furniture or use the furniture to harm staff members.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others"
+        ]
+      },
+      {
+        "row": 58,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.1. The headwall can be closed, dismounted, or otherwise efficiently adapted to restrict patient access",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce need for restraints",
+          "Reduce exposure to triggering content",
+          "Adequate care for co-occurring med/psych conditions",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 59,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.2. There is adequate storage space in the room to accommodate all medical supplies and equipment",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Quicker response in emergency events",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow"
+        ]
+      },
+      {
+        "row": 60,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.3. Adequate storage for the waste bin is provided to keep the bin in the room while restricting patient access to it.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 61,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.4. Adequate storage for the sharps container is provided to keep the container in the room while restricting patient access to it.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Preventing Self Harm",
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 62,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.5. The computer can easily be stored and secured, either in the room or close to the room's entrance",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce harm aggainst others",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow"
+        ]
+      },
+      {
+        "row": 63,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.6. The procedures workstation can easily be stored and secured, either in the room or close to the room's entrance",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow"
+        ]
+      },
+      {
+        "row": 64,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.7. The IV pole can easily be stored and secured, either in the room or close to the room's entrance",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow"
+        ]
+      },
+      {
+        "row": 65,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.8. Mobile lighting equipment can easily be stored and secured, either in the room or close to the room's entrance",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow"
+        ]
+      },
+      {
+        "row": 66,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.9. All cabinets in the room can be locked with tamper-resistant locks, limiting patient access",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Perception of safety",
+          "Reduce harm aggainst others",
+          "Reduce exposure to triggering content",
+          "Adequate care for co-occurring med/psych conditions"
+        ]
+      },
+      {
+        "row": 67,
+        "category": "Worker Safety & Effectiveness",
+        "guideline": "6. Provide flexible and adaptable work environments",
+        "strategy": "6.10. The room incorporates a clear labeling system to identify potential ligature and other risks, enabling staff to quickly recognize potential risks",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce staff workload (physical and cognitive)",
+          "Adequate care for co-occurring med/psych conditions",
+          "Improved coordination of patient flow",
+          "Provision of appropriate psych care in the ED"
+        ]
+      },
+      {
+        "row": 68,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.1. Care partner furniture supports face-to-face conversation with staff members and the patient",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 69,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.2. The room's acoustic design supports private care partner-provider conversations right outside the room, protecting patients from heavy/difficult topics",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduced miscommunication with family members",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 70,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.3. Care partners have more than one resource to communicate with the ED nursing staff",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Reduced miscommunication with family members",
+          "Enhance Patient and family satisfaction",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport"
+        ]
+      },
+      {
+        "row": 71,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.4. The room's design comfortably accommodates more than one care partner",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Quick response from medical team",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care"
+        ]
+      },
+      {
+        "row": 72,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.5. Care partner furniture does not impeded or disrupt staff workflows",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Quick response from medical team",
+          "Reduce crowding",
+          "Facilitating family participation in care"
+        ]
+      },
+      {
+        "row": 73,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.6. The lighting design allows the family zone and patient zone to be controlled separately",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 74,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.7 There is a stable, cleanable work surface sized for shared activities between the patient and care providers",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": []
+      },
+      {
+        "row": 75,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "9. Provide opportunities for engaging patients and care partners",
+        "strategy": "9.8. The room's design accommodates family members/care partners to sleep in the room",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce crowding",
+          "Facilitating family participation in care"
+        ]
+      },
+      {
+        "row": 76,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.1. The room's interior design creates a warm and inviting ambiance",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 77,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.2. There are decorative elements in the room",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 78,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.3. The design incorporates lighting systems that can be programmed to adjust color, brightness, and/or timing to create specific moods or atmospheres",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Promoting trust and rapport",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 79,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.4. The design incorporates decorative biophilic elements",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 80,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.5. The design has windows (or simulated windows) offering views to natural elements",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 81,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.6. The design has windows with views to the outdoors",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 82,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.7. HVAC systems can be controlled and adjusted by staff to meet the needs of individuals with sensory sensitivities",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 83,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.8. The lighting design ensures adequate illumination while considering the needs of individuals with sensory sensitivities",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 84,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.9. Care partner and patient areas have diffuse lighting options for soft, uniform illumination",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 85,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.10 The design provides daylight access or Circadian lighting that mimics natural changes in lighting color and temperature throughout the day",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 86,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.11. Patient bed/chair is comfortable for extended periods of use",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 87,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.12. Patient bed/chair has height-adjustable head/foot sections",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 88,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.13. Additional seating furniture is comfortable for extended periods of use",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 89,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.14. The entertainment system is clearly visible from the patient bed/chair",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 90,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.15. The entertainment system is clearly visible from care partner seating",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Promoting trust and rapport",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 91,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.16.Furniture, fixtures, equipment, and finishes are constructed of impact-resistant materials that withstand abuse",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 92,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "10. Support patient and family dignity and comfort",
+        "strategy": "10.17 Walls have guards or protection panels that prevent damage from moving furniture and equipment",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 93,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "11. Create opportunities for auditory and visual privacy",
+        "strategy": "11.1. The design incorporates a white noise system to help mask external sounds and reduce noise disruptions",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Perception of safety",
+          "Reduce exposure to triggering content",
+          "Enhance Patient and family satisfaction",
+          "Reduce agitation & boredom"
+        ]
+      },
+      {
+        "row": 94,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "11. Create opportunities for auditory and visual privacy",
+        "strategy": "11.2. Doors, windows, and walls are designed to minimize sound transmission and facilitate privacy and aural comfort",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce exposure to triggering content",
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 95,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "11. Create opportunities for auditory and visual privacy",
+        "strategy": "11.3. There are blinds, shutters, or other privacy control measures on the windows facing the hallway to allow for adjustable levels of patient privacy",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Reduce exposure to triggering content",
+          "Enhance Patient and family satisfaction",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 96,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "11. Create opportunities for auditory and visual privacy",
+        "strategy": "11.4. There are blinds, shutters, or other privacy control measures on the windows facing the outdoors",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Facilitating family participation in care",
+          "Promoting trust and rapport",
+          "Safeguard patient confidential information",
+          "Limits being seen by others",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 97,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.1. Patients have more than one choice of place to sit, lie down, or stand",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 98,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.2. Patients can have control over the entertainment system",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 99,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.3. Patients can have control over the room's temperature",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 100,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.4. Patients can have control over the blinds and shutters on outdoor windows",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 101,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.5. Patients and care partners can control lighting",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 102,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.6. There is a dedicated, lockable storage area within the patient's line of sight for storing patient belongings.",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 103,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "12. Provide patient choice and control over the environment",
+        "strategy": "12.7. The design allows for some level of visual customization by the patient",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Improve Patient and family comfort",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 104,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "strategy": "13.1. The room's decoration/aesthetic is appropriate for the full range of ages of patients that will be cared for in the room",
+        "design_feature_category": "Furnishings & Finishes",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Enhance sense of dignity"
+        ]
+      },
+      {
+        "row": 105,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "strategy": "13.2. The room's design incorporates opportunities for sensory experiences in the room",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Enhance Patient and family satisfaction",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 106,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "strategy": "13.4. The design offers opportunities for positive patient distraction",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce harm aggainst others",
+          "Enhance Patient and family satisfaction",
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 107,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "strategy": "13.5. The room's design incorporates opportunities for immersive experiences within the room",
+        "design_feature_category": "Architectural Elements",
+        "served_outcomes": [
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      },
+      {
+        "row": 108,
+        "category": "Patient Care Quality & Experience",
+        "guideline": "13. Create opportunities for sensory-friendly support",
+        "strategy": "13.6. The entertainment system's content changes in real-time based on user inputs",
+        "design_feature_category": "MEP & Building Systems",
+        "served_outcomes": [
+          "Reduce anxiety",
+          "Reduce agitation & boredom",
+          "Enhance sense of dignity",
+          "Improve emotional & sleep regulation"
+        ]
+      }
+    ],
+    "response_options": [
+      "Yes",
+      "No",
+      "Maybe",
+      "Not Applicable"
+    ],
+    "note": "User answers 'Successfully Implemented?' per strategy. Guideline importance pulled from guideline_prioritization override."
+  },
+  "dat_report": {
+    "title": "Design Alignment Tool Report",
+    "note": "Per guideline: importance_weight = score for guideline's importance label (importance_scale). total_items = count strategies != 'Not Applicable'. yes = count 'Yes'. maximum_score = total_items * importance_weight. score_obtained = yes * importance_weight. alignment_score = score_obtained / maximum_score (percentage). Maybe/No count as 0.",
+    "columns": [
+      "Category",
+      "Guideline",
+      "Importance",
+      "Importance weighting score",
+      "Total Items",
+      "Yes (count 1)",
+      "Maybes (null)",
+      "No's (null)",
+      "Maximum score",
+      "Score obtained",
+      "Alignment Score (%)"
+    ]
+  }
+}
